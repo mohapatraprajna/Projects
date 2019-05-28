@@ -1,0 +1,26 @@
+body{
+    padding-top: 20px;
+  
+}
+.nav-justified{
+    background-color: azure;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.nav-justified > li > a{
+    padding: 15px 0;
+    color: darkgray;
+    text-align: center;
+    background-color: gainsboro;
+}
+.jumbotron{
+    text-align: center;
+    background-color: cornsilk;
+    }
+.jumbotron .btn{
+    padding: 15px 25px;
+    font-size: 22px;
+    }
+.centro{
+    text-align:center;
+}

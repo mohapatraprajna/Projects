@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<title>Template Coffee shop </title>
+<meta name="description" content="A slider made with the Pieces library where slides are animated in a fragmented look." />
+		<meta name="keywords" content="slideshow, slider, pieces, fragments, animation, svg, canvas, javascript" />
+		<meta name="author" content="Luis Manuel for Codrops" />
+		
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css"> 
+ <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">	
+
+</head>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+	
+<body>
+
+     <div class="container">
+		 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+   <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                   
+                </button>
+                <h1 class="codrops-header__title">Mocha Cafe</h1>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                   <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                   
+                    <li>
+                        <a class="page-scroll" href="#about"><b>About</b>
+</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services"><b>Services</b>
+</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#menu"><b>Menu</b>
+ </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio"><b>Portfolio</b>
+</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact"><b> Contact</b>
+</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+             </div>
+        <!-- /.container-fluid -->
+    </nav>
+   
+		<main class="container-fluid">
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/ScrollingLettersAnimation/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=33985" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					
+				</header>
+				
+			</div>
+			<div class="content">
+				<!-- Pieces Slider -->
+				<div class="pieces-slider">
+					<!-- Each slide with corresponding image and text -->
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="images/slider1.jpeg" alt="">
+						<h2 class="pieces-slider__text">Coffee is a Hug in a Mug!</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="images/slider2.jpeg" alt="">
+						<h2 class="pieces-slider__text">Coffee is always a good idea!</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="images/slider3.jpeg" alt="">
+						<h2 class="pieces-slider__text">Life happens Coffee helps!</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="images/slider4.jpeg" alt="">
+						<h2 class="pieces-slider__text">Humanity runs on Coffee!</h2>
+					</div>
+					
+					<!-- Canvas to draw the pieces -->
+					<canvas class="pieces-slider__canvas"></canvas>
+					<!-- Slider buttons: prev and next -->
+					<button class="pieces-slider__button pieces-slider__button--prev">prev</button>
+					<button class="pieces-slider__button pieces-slider__button--next">next</button>
+				</div>
+			</div>
+		</main>
+ 
+ 
+
+   
+   <!-- ABOUT Section -->
+   <section id="about" class="background-about">
+   <div class="row">
+  <h1 class="aboutt">About</h1>
+				
+    
+   <span class="abouts-span">This is all about Us...</span>
+<div class="col-md-6"> 
+               <img src="images/imag1.gif" width="480" height="350" class="our-story-pic" alt=""> 
+               <p class="para">Dolores iusto cupiditate unde nam nihil. Recusandae fuga nostrum nam, vitae. Nulla ab nihil voluptatum magnam est dignissimos tempore, facere voluptatibus, nostrum nesciunt suscipit eius obcaecati reiciendis molestias recusandae. Ratione.</p>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel suscipit aut deleniti, aperiam adipisci necessitatibus asperiores dolorem repellat officiis quae impedit odio, quis delectus perspiciatis, rerum eligendi voluptate molestiae illo.</p>
+               <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel suscipit aut deleniti, aperiam adipisci necessitatibus asperiores dolorem repellat officiis quae impedit odio, quis delectus perspiciatis, rerum eligendi voluptate molestiae illo.</p>
+                
+               </div>
+   
+   <div class="col-md-6">
+               <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel suscipit aut deleniti, aperiam adipisci necessitatibus asperiores dolorem repellat officiis quae impedit odio, quis delectus perspiciatis, rerum eligendi voluptate molestiae illo.</p>
+               <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel suscipit aut deleniti, aperiam adipisci necessitatibus asperiores dolorem repellat officiis quae impedit odio, quis delectus perspiciatis, rerum eligendi voluptate molestiae illo.</p>
+               <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel suscipit aut deleniti, aperiam adipisci necessitatibus asperiores dolorem repellat officiis quae impedit odio, quis delectus perspiciatis, rerum eligendi voluptate molestiae illo.</p>
+                <img src="images/imag2.gif" class="our-story-pic" alt="">
+                
+       
+            
+               </div>
+   </div>
+   </section>
+ <!-- about Section ends -->
+  
+   <!-- service Section -->  
+   <section id="services" class="background-services">
+   
+  <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="heading-services">Services</h1>
+                   <span class="services-span">You can call for our services any time!</span>
+                </div>
+            </div>
+            <!-- Header --><header>
+    <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Best Coffee Service!</div>
+                <div class="intro-heading">Coffee Makes Friends</div>
+                
+        </div>
+              </header>
+     
+            <div class="row text-center">
+                <div class="col-md-4">
+                   <img src="images/services/one.jpg" alt="">
+                    <h4 class="service-heading">Coffee at home</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                  
+               <img src="images/services/two.jpg" alt="">
+                    <h4 class="service-heading">Coffee makes great websites</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                   <img src="images/services/three.jpg" alt="">
+                    <h4 class="service-heading">Sercurity people works on Coffee</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+       
+    </section>
+    
+    <section id="menu" class="background-menu">
+        <div class="col-md-12">
+                <h1 class="aboutt">Menu</h1> 
+               <img src="images/menu.gif" class="menu-picture1" alt="">
+             
+               </div>
+               <section class="price-list wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+               <div class="row">
+               <div class="col-lg-10 col-lg-offset-1">
+               
+               <div class="col-md-6 col-sm-12">
+               <div class="price-content">
+               <div class="price-mainheading"><i>Hot Beverages</i><hr></div>
+               <div class="price-heading">Cafe Mocha<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Cafe Latte <div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Cappuccino <div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Cafe Americano<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Espresso <div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               </div>
+               </div>
+               <!-- /column1 -->
+                   
+               <div class="col-md-6 col-sm-12">
+               <div class="price-content">
+               <div class="price-mainheading"><i>Cold Beverages</i><hr></div>
+               <div class="price-heading">Iced Coffee<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Iced Americano <div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Iced Mocha<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Iced Latte<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Iced Tea<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               </div>
+               </div>
+               <!-- /column2 -->
+                     
+               <div class="col-md-12"> 
+               <img src="images/menu1.jpg" class="menu-picture2" alt="">
+               </div>
+                     
+               <div class="col-md-6 col-sm-12">
+               <div class="price-content">
+               <div class="price-mainheading"><i>Baked Goods</i><hr></div>
+               <div class="price-heading">Apple Cider Donut<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Croissant<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Blueberry Muffin<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               </div>
+               </div>
+               <!-- /column3 -->
+                     
+               <div class="col-md-6 col-sm-12">
+               <div class="price-content">
+               <div class="price-mainheading"><i>Soft drinks</i><hr></div>
+               <div class="price-heading">Orange juice<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Lemonade<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               <div class="price-heading">Bottled Water<div class="price-item">$3</div>
+               </div>
+               <div class="description">Coffee, the finest organic suspension ever devised.</div>
+               </div>
+               </div>
+               <!-- /column4 -->
+
+               </div>
+               <!-- /col-lg-10 -->
+               </div>
+               <!-- /row -->
+               </section>
+         </section>
+   
+   <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="background-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="heading-portfolio"><b>Portfolio</b></h1>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                
+                            </div>
+                        </div>
+                        <img src="images/portfolio/pexels-photo-1436172.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Great Taste</h4>
+                        <p class="text-muted">Nice Cafe</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                
+                            </div>
+                        </div>
+                        <img src="images/portfolio/pexels-photo-312420%20(1).jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Coffee work</h4>
+                        <p class="text-muted">Whisky sleep</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                
+                            </div>
+                        </div>
+                        <img src="images/portfolio/pexels-photo-324028.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Coffee</h4>
+                        <p class="text-muted">Survival Juice</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                
+                            </div>
+                        </div>
+                        <img src="images/portfolio/pexels-photo-374780.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Drink Coffee</h4>
+                        <p class="text-muted">Do Good</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                               
+                            </div>
+                        </div>
+                        <img src="images/portfolio/pexels-photo-434231.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Life Happens</h4>
+                        <p class="text-muted">Coffee Helps</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                               
+                            </div>
+                        </div>
+                        <img src="images/portfolio/restaurant-red-beans-coffee.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>A Coffee a day</h4>
+                        <p class="text-muted">Keeps The Grumpy Away</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact Grid Section -->   
+      <section id="contact" class="background-contact">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12">
+                      <h1 class="heading-contact">
+                      <b>Contact Us</b></h1>
+                      <h2 class="headings-contact"><i><u>Get in Touch</u></i></h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="contact-column">
+                          <h3><u><b>Location</b></u></h3>
+                         <p> Mocha Cafe..
+                          Botanical Garden. Near Chirec Public School,pin:500345, Kondapur, HYderbad.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="contact-column"> 
+                      <h3><u>Email</u></h3>
+                      <p>www.mochacafe@gmail.com</p>
+                    </div>
+                      </div>   
+                    <div class="col-md-3">
+                      <div class="contact-column">
+                      <h3><u><b>Call Us</b></u></h3>
+                      <P>PHONE NO.: 9023154367<br>89903335674</P>
+                      
+                        </div>
+                        </div>
+                      <div class="col-md-3">
+                      <div class="contact-column">
+                      <h3><u><b>Reservation</b></u></h3>
+                      <p>www.mochacafe@gmail.com</p>
+                       <P>PHONE NO.: 9023154367<br>89903335674</P>
+                          </div>
+                  </div>
+              </div>
+            </div><br>
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15224.283521348072!2d78.35504937869175!3d17.456321258595963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d17.4563328!2d78.368768!4m5!1s0x3bcb93b8005951fb%3A0xd308535fa9706fd3!2sbotanical+garden+kondapur+hyderabad+map!3m2!1d17.4539898!2d78.3572149!5e0!3m2!1sen!2sin!4v1548757509853" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 </div>
+               
+                 <div class="col-md-6"> 
+                 <div class="contact-form">
+                     <h3 class="head-contact"><u><i>Contact Us</i></u></h3>
+                     <form class="contact-form">
+                         <input type="hidden" id="security" name="security" value="640050b665">
+                         <input type="hidden" name="_wp_http_referer" value="/restaurant/contact/">
+            <div class="form-group">
+							<input type="text" name="username" class="form-control" placeholder="Full Name"><br>
+				<div class="form-group">
+							<input type="text" class="form-control" name="useremail" placeholder="Email Address"><br>
+            <div class="form-group">
+							<input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+             <div class="form-group">
+							<textarea class="form-control" rows="5" name="description" placeholder="Message"></textarea>
+							
+						</div>
+						</div>
+						</div>
+						</div>
+                     </form>
+                 </div>
+                  
+                    
+             </div>
+         </div>   
+            
+          </div>  
+      </section> 
+     
+       <div class="row">
+         <div class="col-md-6">
+         <img src="images/coffee-171653_640.jpg">
+           </div>
+           <div class="col-md-6">
+               <div id="opening_hours-2" class="services-column column-widget column-widget-v2"><h3><b><u>SERVICE HOURS</u></b></h3>			<ul class="service-hours-list">
+				<li class="close-day">
+						<span class="pull-left days">Mondays</span>
+						<em>..................</em>
+						<span class="pull-right time">Close</span>
+					</li>
+				<li class="">
+						<span class="pull-left days">Tues - Fri</span>
+						<em>..................</em>
+						<span class="pull-right time">09am - 12am</span>
+					</li>
+				<li class="">
+						<span class="pull-left days">Sat - Sun</span>
+						<em>..................</em>
+						<span class="pull-right time">08am - 1am</span>
+					</li>
+				<li class="">
+						<span class="pull-left days">Public Holidays</span>
+						<em>..................</em>
+						<span class="pull-right time">08am - 1am</span>
+					</li>
+				</ul>
+			     <a class="xs-btn" href="#">View All</a>
+                    				</div>
+           </div>
+       </div>
+       <div class="Copy-rights">
+        <div class="row">
+        <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+       <div class="col-md-6">         
+    <p class="pull-left">2015 | All Rights Reserved</p>
+        </div>
+                </div>
+       
+         </div>
+       
+       
+  
+        
+     </div>
+		<script src='js/anime.min.js'></script>
+		<script src='js/pieces.min.js'></script>
+		<script src='js/demo.js'></script>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
